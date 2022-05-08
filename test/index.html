@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><section class="centering">
+      <div class="left centering" style="width: 15vw; background-color: antiquewhite;"><i class="fa-brands fa-digg" style="font-size: 60px;"></i></div>
+      <div class="left" style="width: 69vw; background-color: chocolate;">1</div>
+      <div class="left centering" style="width: 15vw; background-color: antiquewhite;">1</div></section>
+    </header>
+    <main>
+      <div class="grid-cont round" style="border: 1px black solid">
+        <br />
+        <i
+          class="fa-solid fa-skull-crossbones"
+          style="font-size: 50px; justify-self: center"
+        ></i>
+        <div style="font-weight: bold; justify-self: center">
+          Restricted area, please enter password!
+        </div>
+        <form
+          action=""
+          value="Enter at least 4 characters here"
+          style="justify-self: center"
+        >
+          <label for="pass" style="font-size: 16px; display: block"
+            >Password (4 characters minimum):
+          </label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="4"
+            required="true"
+            style="text-align: center"
+          />
+          <br />
+          <input
+            type="submit"
+            value="Enter"
+            style="
+              border-radius: 0 0 0 50px;
+              background-color: green;
+              width: 120.55px;
+            "
+          />
+          <input
+            type="button"
+            value="Abort"
+            style="
+              border-radius: 0 0 50px 0;
+              background-color: rgb(206, 0, 0);
+              width: 120.55px;
+            "
+          />
+        </form>
+        <br />
+      </div>
+    </main>
+  </body>
+</html>

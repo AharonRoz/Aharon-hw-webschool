@@ -1,0 +1,54 @@
+body{
+  background-color: cadetblue;
+}
+section{
+  width: 20vw;
+  height: 20vw;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+
+}
+
+div{
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(106, 161, 23);
+  border-radius: 50%;
+  position: relative;
+  top: 32%;
+  left: 28%;
+  animation: eyes infinite alternate ease 3s;
+
+}
+
+span{
+  width: 5vw;
+  height: 5vw;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 31%;
+  left: 29%;
+}
+#b{
+  position: absolute;
+  top: 50px;
+  left: 40%;
+}
+@keyframes eyes{
+  100%{
+    position: absolute;
+    top: 50%;
+  }
+  50%{
+    position: absolute;
+    top: 0;
+  }
+  0%{
+    position: absolute;
+    top: 50%;
+  }
+}

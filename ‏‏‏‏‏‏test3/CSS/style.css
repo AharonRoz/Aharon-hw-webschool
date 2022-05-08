@@ -1,0 +1,573 @@
+
+body {
+  background-image: url(https://1.bp.blogspot.com/_xikAd4p0X0c/SHpj_yJ_fnI/AAAAAAAAAQg/vjp-glWjg4s/s1600/%D7%A2%D7%9C+%D7%94%D7%90%D7%A9+2044.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+#fan {
+  transform: scaleX(-1);
+}
+.fan-pic {
+  position: relative;
+  top: 42vh;
+  left: -22vw;
+  width: 22vw;
+  height: 41vh;
+}
+
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fan-v {
+  position: relative;
+  width: 13vw;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: #0f255f69;
+}
+.fan-b {
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  transform: rotateZ(62deg);
+} 
+.a1 {
+  animation-duration: 2s;
+  animation-name: smk;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.a2{
+  animation-duration: 3s;
+  animation-name: smk2;
+  animation-iteration-count: infinite;
+}
+.vnt {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 50%;
+  transform: rotateZ(42deg) rotateZ(1deg);
+  transform-origin: 50% 54%;
+}
+.fan-b:hover {
+  transform: scale(150%) rotateZ(62deg);
+}
+
+.fan2:hover ~ .vnt {
+  animation-duration: 0.1s;
+  animation-name: c;
+  animation-iteration-count: infinite;
+}
+.fan1:hover ~ .vnt {
+  animation-duration: 0.01s;
+  animation-name: c;
+  animation-iteration-count: infinite;
+}
+.fan2:hover~.a1{
+  opacity: 100%;
+  animation-name: mov11;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.fan1:hover~.a1{
+  opacity: 100%;
+  animation-name: mov12;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.fan2:hover~.a2{
+  opacity: 100%;
+  animation-name: mov21;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.fan1:hover~.a2{
+  opacity: 100%;
+  animation-name: mov22;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.fan2:hover~.a3{
+  opacity: 100%;
+  animation-name: mov31;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+.fan1:hover~.a3{
+  opacity: 100%;
+  animation-name: mov32;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+.fan2:hover~.a4{
+  opacity: 100%;
+  animation-name: mov41;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+.fan1:hover~.a4{
+  opacity: 100%;
+  animation-name: mov42;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+.fan2:hover~.a5{
+  opacity: 100%;
+  animation-name: mov51;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.fan1:hover~.a5{
+  opacity: 100%;
+  animation-name: mov52;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.fan2:hover~.a6{
+  opacity: 100%;
+  animation-name: mov61;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.fan1:hover~.a6{
+  opacity: 100%;
+  animation-name: mov62;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.fan2:hover~.a7{
+  opacity: 100%;
+  animation-name: mov71;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+.fan1:hover~.a7{
+  opacity: 100%;
+  animation-name: mov72;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+.fan2:hover~.a8{
+  opacity: 100%;
+  animation-name: mov81;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.fan1:hover~.a8{
+  opacity: 100%;
+  animation-name: mov82;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.fan2:hover~.a9{
+  opacity: 100%;
+  animation-name: mov91;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.fan1:hover~.a9{
+  opacity: 100%;
+  animation-name: mov92;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+@keyframes c {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes mov11{
+  from{
+    bottom: 26vh;
+        left: 54vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 187, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov12{
+  from{
+    bottom: 26vh;
+        left: 54vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 187, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov21{
+  from{
+    bottom: 19vh;
+        left: 53vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(155, 95, 4);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov22{
+  from{
+    bottom: 19vh;
+        left: 53vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(155, 95, 4);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov31{
+  from{
+    bottom: 25vh;
+        left: 50vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(179, 179, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov32{
+  from{
+    bottom: 25vh;
+        left: 50vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(179, 179, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov41{
+  from{
+    bottom: 16vh;
+        left: 56vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov42{
+  from{
+    bottom: 16vh;
+        left: 56vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov51{
+  from{
+    bottom: 11vh;
+        left: 55vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov52{
+  from{
+    bottom: 11vh;
+        left: 55vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov61{
+  from{
+    bottom: 20vh;
+        left: 49vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov62{
+  from{
+    bottom: 20vh;
+        left: 49vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov71{
+  from{
+    bottom: 13vh;
+        left: 48vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov72{
+  from{
+    bottom: 13vh;
+        left: 48vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov81{
+  from{
+    bottom: 23vh;
+        left: 45vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov82{
+  from{
+    bottom: 23vh;
+        left: 45vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov91{
+  from{
+    bottom: 23vh;
+        left: 54vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    transform: translateX(300px) translateY(-300px);
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}
+@keyframes mov92{
+  from{
+    bottom: 23vh;
+        left: 54vw;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 255, 0);
+        border-radius: 50%;
+        opacity: 100%;
+  }
+  to{
+    bottom: 40%;
+    left: 80%;
+        position: absolute;
+        width: 2px;
+        height: 3px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        opacity: 1%;
+  }
+}

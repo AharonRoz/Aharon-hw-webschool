@@ -1,0 +1,28 @@
+#needle{
+position: absolute;
+right: 91px;
+top: 87px;
+transform: rotateZ(223deg);
+transform-origin: 50% 80%;
+transition: all 5s ease;
+}
+body{
+  background-color: black;
+}
+#dash{
+position: absolute;
+right: 0px;
+}
+#ped{
+position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 50;
+  transition: all 3s ease;
+}
+#ped:hover{
+  transform: rotateX(70deg);
+}
+#ped:hover ~ #needle{
+  transform: rotateZ(382deg);
+}

@@ -1,0 +1,45 @@
+
+main {
+  /* background-image: url(../assets/images/adult-color-palette-colorful-567452.jpg); */
+  background-color: aquamarine;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.grid-cont {
+  width: 400px;
+  height: 250px;
+  background-color: rgb(221 221 221);
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  box-shadow: 7px 6px 5px 2px #99908da6;
+}
+.round {
+  border-radius: 15%;
+}
+header {
+  width: 100vw;
+  height: 15vh;
+  background-color: white;
+  border: black 1px solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+section {
+  display: block;
+}
+.centring {
+  justify-self: center;
+  align-items: center;
+}
+.left {
+  float: left;
+  height: 100%;
+}
+.right {
+  float: right;
+}
