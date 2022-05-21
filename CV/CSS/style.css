@@ -72,7 +72,7 @@ h1 {
 
 :target .menu {
   visibility: visible;
-  transform: translateX(10vh);
+  transform: translateX(132%);
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0, 0.9);
 }
 
