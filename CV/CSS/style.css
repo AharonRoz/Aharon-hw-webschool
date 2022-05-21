@@ -1,51 +1,165 @@
-section{
-    width: 100vw;
-    height: 100vh;
-    display:flex;
-   border: 3px solid black;
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
-.stp1{
-    width: 100%;
-    height: 35px;
-    background-color: rgb(18, 49, 107);
+.stp1 {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(18, 49, 107);
 }
 
-.stp2{
-    width: 100%;
-    height: 25px;
-    margin: 5px 0px;
-    background-color: rgb(68, 113, 197);
+.stp2 {
+  width: 100%;
+  height: 25px;
+  margin: 5px 0px;
+  background-color: rgb(68, 113, 197);
 }
 
-.pro{
-    border-radius: 50%;
-    border: 8px solid gray;
-    padding: 4px;
-    position: absolute;
-    right: 20%;
-    top: 5%;
-    background-color: white;
+.pro {
+  border-radius: 50%;
+  border: 8px solid gray;
+  padding: 4px;
+  margin: 6% 0;
+  width: 100%;
+  max-width: 170px;
+  background-color: white;
 }
 
-h1{
-    position: absolute;
-    left: 20%;
-    top: 35px;
-    padding: 5px;
-    background-color: white;
-font-size: 25px;
+h1 {
+  position: absolute;
+  left: 20%;
+  top: 35px;
+  padding: 5px;
+  background-color: white;
+  font-size: 25px;
 }
 
-.ball{
-    width: 150px;
-    height: 150px;
-border-radius: 50%;
-background-color: cadetblue;
+.ball {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: cadetblue;
 }
 
-.allb{
-    position: absolute;
-    flex-wrap: wrap;
-    display: flex;
+.allb {
+  position: absolute;
+  left: 20%;
+  top: 70vh;
+  width: 60vw;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cont {
+  display: flex;
+}
+
+.cont1 {
+  width: 20%;
+}
+.cont2 {
+  width: 50%;
+}
+.cont3 {
+  width: 30%;
+}
+
+.hidenn {
+  visibility: hidden;
+}
+
+:target .menu {
+  visibility: visible;
+  transform: translateX(10vh);
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0, 0.9);
+}
+
+.ab:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.ab:hover ~ .iab {
+  z-index: 1 !important;
+}
+.ab:hover > .pab {
+  visibility: hidden;
+}
+
+.bb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.bb:hover ~ .ibb {
+  z-index: 1 !important;
+}
+.bb:hover > .pbb {
+  visibility: hidden;
+}
+
+.cb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.cb:hover ~ .icb {
+  z-index: 1 !important;
+}
+.cb:hover > .pcb {
+  visibility: hidden;
+}
+
+.db:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.db:hover ~ .idb {
+  z-index: 1 !important;
+}
+.db:hover > .pdb {
+  visibility: hidden;
+}
+
+.eb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.eb:hover ~ .ieb {
+  z-index: 1 !important;
+}
+.eb:hover > .peb {
+  visibility: hidden;
+}
+
+.fb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.fb:hover ~ .ifb {
+  z-index: 1 !important;
+}
+.fb:hover > .pfb {
+  visibility: hidden;
+}
+
+:target .iframe{
+  visibility: visible;
 }
