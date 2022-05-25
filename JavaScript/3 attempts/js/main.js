@@ -14,6 +14,8 @@
 //   passList.push((arr[i])[2]);
 // }
 
+
+
 // function print() {
 //   for (let e = 0; e < nameList.length; e++) {
 //     if (fv == nameList[e] && pv == passList[e]) {
@@ -42,7 +44,6 @@ const Users = [
 
 FormElems.button.addEventListener("click", login);
 FormElems.username.addEventListener("input", checkValidEmail);
-var attempts = 3;
 
 function checkValidEmail() {
   FormElems.username.style.borderColor = "rgba(0,0,0,0)";
@@ -61,14 +62,14 @@ function login() {
     FormElems.password.style.border = "";
     var username = FormElems.username.value.toLowerCase();
     var password = FormElems.password.value;
+
     if (username && password) {
       if (
         username.includes("@") === false ||
         username.includes(".") === false
       ) {
-        throw new Error("You're email is not valid.");
+          throw new Error("You're email is not valid.")
       }
-
       var fName = "";
       for (let i = 0; i < Users.length; i++) {
         const u = Users[i];
@@ -83,18 +84,7 @@ function login() {
         FormElems.main.innerHTML = "";
         FormElems.main.append(h1);
       } else {
-        alert(`There are ${attempts - 1} more login attempts left`);
-        attempts--;
-        if (attempts == 1) {
-          FormElems.button.addEventListener("click", out);
-        
-          function out() {
-            alert("You have reached the limit of attempts");
-            document.querySelector("main").innerHTML=`<input type="text" id="email">
-          <input type="password" id="password">
-          <button id="btn">I am a Button</button>`;
-          }
-        }
+        alert("Wrong credentials");
       }
     } else {
       if (!username) {
