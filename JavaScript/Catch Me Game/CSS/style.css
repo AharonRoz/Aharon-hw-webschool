@@ -1,0 +1,266 @@
+/* section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.stp1 {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(18, 49, 107);
+}
+
+.stp2 {
+  width: 100%;
+  height: 25px;
+  margin: 5px 0px;
+  background-color: rgb(68, 113, 197);
+}
+
+.pro {
+  border-radius: 50%;
+  border: 8px solid gray;
+  padding: 4px;
+  margin: 6% 0;
+  width: 100%;
+  max-width: 170px;
+  background-color: white;
+}
+
+h1 {
+  position: absolute;
+  left: 20%;
+  top: 35px;
+  padding: 5px;
+  background-color: white;
+  font-size: 25px;
+}
+
+.ball {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: cadetblue;
+}
+
+.allb {
+  position: absolute;
+  left: 20%;
+  top: 70vh;
+  width: 60vw;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cont {
+  display: flex;
+}
+
+.cont1 {
+  width: 20%;
+}
+.cont2 {
+  width: 50%;
+}
+.cont3 {
+  width: 30%;
+}
+
+.hidenn {
+  visibility: hidden;
+}
+
+:target .menu {
+  visibility: visible;
+  transform: translateX(132%);
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0, 0.9);
+}
+
+.ab:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.ab:hover ~ .iab {
+  z-index: 1 !important;
+}
+.ab:hover > .pab {
+  visibility: hidden;
+}
+
+.bb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.bb:hover ~ .ibb {
+  z-index: 1 !important;
+}
+.bb:hover > .pbb {
+  visibility: hidden;
+}
+
+.cb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.cb:hover ~ .icb {
+  z-index: 1 !important;
+}
+.cb:hover > .pcb {
+  visibility: hidden;
+}
+
+.db:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.db:hover ~ .idb {
+  z-index: 1 !important;
+}
+.db:hover > .pdb {
+  visibility: hidden;
+}
+
+.eb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.eb:hover ~ .ieb {
+  z-index: 1 !important;
+}
+.eb:hover > .peb {
+  visibility: hidden;
+}
+
+.fb:hover {
+  transform: scale(130%);
+  background-color: rgb(68, 113, 197);
+  border: 5px solid rgb(18, 49, 107);
+  transition: all 0.4s ease;
+}
+
+.fb:hover ~ .ifb {
+  z-index: 1 !important;
+}
+.fb:hover > .pfb {
+  visibility: hidden;
+}
+
+:target .iframe{
+  visibility: visible;
+} */
+
+body {
+  background-color: beige;
+}
+
+main {
+  display: flex;
+}
+
+#up {
+  width: 80vw;
+  height: 4vw;
+  margin: 10px auto;
+  background-color: yellowgreen;
+}
+
+@media (max-width: 479px) {
+  #up {
+    height: 36px;
+  }
+}
+#screen {
+  width: 60vw;
+  height: 85vh;
+  background-color: black;
+  position: absolute;
+  left: 10vw;
+  bottom: 10px;
+}
+
+#side {
+  width: 18vw;
+  height: 85vh;
+  background-color: turquoise;
+  position: absolute;
+  right: 10vw;
+  bottom: 10px;
+  padding: 10px;
+}
+
+#btn{
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+}
+
+.boxx{
+  background-color: antiquewhite;
+  position: relative;
+  width: auto;
+  font-size: 1.75vh;
+  margin: 1% 3%;
+  height: 14.3%;
+}
+.boxx2{
+  background-color: antiquewhite;
+  width: auto;
+  height: 22.5vh;
+  margin: 0 3%;
+  font-size: 1.75vh;
+}
+
+div.f1 span{
+  display: none;
+}
+
+div.f1:hover span{
+  display: block;
+}
+
+div.f2 span{
+  display: none;
+}
+
+div.f2:hover span{
+  display: block;
+}
+
+div.f3 span{
+  display: none;
+}
+
+div.f3:hover span{
+  display: block;
+}
+
+div.f4 span{
+  display: none;
+}
+
+div.f4:hover span{
+  display: block;
+}
+
+div.f5 span{
+  display: none;
+}
+
+div.f5:hover span{
+  display: block;
+}
