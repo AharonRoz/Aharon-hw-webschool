@@ -1,7 +1,7 @@
-export function getInfo() {
-    var search = document.querySelector("#search")
+export function getInfo(val) {
+   
   return new Promise((resolve, reject) => {
-    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=4d8f3320&s=${search.value}`)
+    fetch(`http://www.omdbapi.com/apikey=4d8f3320&s=${val}`)
       .then((res) => {
         return res.json();
       })
