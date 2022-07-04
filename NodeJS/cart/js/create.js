@@ -1,9 +1,8 @@
 const fs = require("fs");
 
-
 function create(x) {
-  fs.writeFileSync("./new",JSON.stringify(process.argv.slice(2)), `a+`);
-
+  
+  fs.writeFileSync("./new.txt", `${x}`, { flag: "a+" });
 }
 
 module.exports = create;
