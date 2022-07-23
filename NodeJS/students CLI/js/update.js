@@ -8,7 +8,7 @@ function create2() {
   for (var i = 0; i < students.length; i++) {
     if (students[i].id === student.id) {
       students[i].name = student.name;
-      students[i].price = student.price;
+      students[i].avg = student.avg;
       fs.writeFileSync(__dirname + "/students.json", JSON.stringify(students));
       break;
     }
