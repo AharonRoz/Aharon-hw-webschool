@@ -13,7 +13,7 @@ function create(x) {
     idEx = "yes";
     console.log("User added");
   } else
-    for (var i = 0; i < students.length; i++) {
+    for (let i = 0; i < students.length; i++) {
       if (JSON.parse(x.id) === JSON.parse(students[i].id)) {
         idEx = "yes";
         console.log("#ID already exists");

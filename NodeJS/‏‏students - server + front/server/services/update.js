@@ -1,11 +1,10 @@
 const fs = require("fs");
 
 function update(x) {
-  let idEx = "no";
   const studentsJson = __dirname + "/../data/students.json";
   const students2 = JSON.parse(fs.readFileSync(studentsJson, "utf-8"));
   if (students2.length != 0) {
-     for (var i = 0; i < students2.length; i++) {
+     for (let i = 0; i < students2.length; i++) {
       const students = JSON.parse(fs.readFileSync(studentsJson, "utf-8"));
       if (JSON.parse(x.id) === JSON.parse(students[i].id)) {
         students[i].name=x.name;
