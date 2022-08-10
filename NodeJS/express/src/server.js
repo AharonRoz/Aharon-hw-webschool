@@ -16,9 +16,11 @@ app.use("/signin", express.static(vDir + "/signin"));
 app.use("/private/private.html", express.static(vDir + "/private"));
 app.use("/signup", express.static(vDir + "/signup"));
 app.use("/private", express.static(vDir + "/private"));
+app.use("/", express.static(vDir + "/signin"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
+  res.sendFile(vDir + "/signin/signin.html");
   console.log("Hi");
 });
 app.get("/signup", (req, res) => {
@@ -39,6 +41,9 @@ app.get("/private", (req, res) => {
   res.redirect(302, "/signin");
   res.sendFile(vDir + "/signin/signin.html");
   return;
+});
+app.get("/", (req, res) => {
+  res.sendFile(vDir + "/signin/signin.html");
 });
 app.get("/signin", (req, res) => {
   res.sendFile(vDir + "/signin/signin.html");
