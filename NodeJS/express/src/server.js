@@ -13,6 +13,7 @@ var cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 app.use("/signin", express.static(vDir + "/signin"));
+app.use("/private/private.html", express.static(vDir + "/private"));
 app.use("/signup", express.static(vDir + "/signup"));
 app.use("/private", express.static(vDir + "/private"));
 app.use(express.json());
@@ -23,16 +24,21 @@ app.get("/", (req, res) => {
 app.get("/signup", (req, res) => {
   res.sendFile(vDir + "/signup/signup.html");
 });
+app.get("/private/private.html", (req, res) => {
+  res.redirect(302, "/signin");
+  res.sendFile(vDir + "/signin/signin.html");
+});
 app.get("/private", (req, res) => {
   const cookieLogin = req.cookies;
   if (cookieLogin["cookieLogin"]) {
     if (cookieLogin["cookieLogin"].cookieLogin == true) {
       res.sendFile(vDir + "/private/private.html");
-      return
+      return;
     }
   }
+  res.redirect(302, "/signin");
   res.sendFile(vDir + "/signin/signin.html");
-  return
+  return;
 });
 app.get("/signin", (req, res) => {
   res.sendFile(vDir + "/signin/signin.html");
